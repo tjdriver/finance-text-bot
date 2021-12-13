@@ -82,7 +82,7 @@ message = client.messages.create(
    )
 
 
-message = client.messages.create(
+message1 = client.messages.create(
        body = first_line + second_line + third_line + fourth_line + '\n' +  fifth_line + sixth_line,
        from_= from_number,
        to= dad_number
