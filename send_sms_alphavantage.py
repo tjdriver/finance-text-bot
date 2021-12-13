@@ -9,6 +9,7 @@ account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 from_number = os.environ['TWILIO_FROM_NUM']
 to_number = os.environ['TWILIO_TO_NUM']
+dad_number = os.environ['TWILIO_DAD_NUM']
 
 params = {
     'function': 'TIME_SERIES_DAILY_ADJUSTED',
@@ -80,6 +81,14 @@ message = client.messages.create(
        to= to_number
    )
 
-# print(message.sid)
+
+message = client.messages.create(
+       body = first_line + second_line + third_line + fourth_line + '\n' +  fifth_line + sixth_line,
+       from_= from_number,
+       to= dad_number
+   )
+ # print(message.sid)
+
+
 
 
