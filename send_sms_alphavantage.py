@@ -12,7 +12,7 @@ to_number = os.environ['TWILIO_TO_NUM']
 dad_number = os.environ['TWILIO_DAD_NUM']
 
 params = {
-    'function': 'TIME_SERIES_DAILY_ADJUSTED',
+    'function': 'TIME_SERIES_DAILY',
     'symbol': 'okta',
     'apikey': av_apikey,
 }
